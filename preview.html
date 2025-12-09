@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@TOIB AI - Preview</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary-cyan: #00f5ff; --primary-purple: #8000ff; --dark-bg: #050508; }
+        body { font-family: 'Rajdhani', sans-serif; background: var(--dark-bg); color: #fff; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; }
+        .grid-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px), linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px); background-size: 50px 50px; pointer-events: none; }
+        .container { text-align: center; z-index: 1; max-width: 800px; }
+        .logo-ring { width: 150px; height: 150px; border: 3px solid var(--primary-cyan); border-radius: 50%; margin: 0 auto 30px; animation: pulse 2s ease-in-out infinite; box-shadow: 0 0 30px rgba(0, 245, 255, 0.5); }
+        @keyframes pulse { 0%, 100% { box-shadow: 0 0 20px rgba(0, 245, 255, 0.5); } 50% { box-shadow: 0 0 40px rgba(128, 0, 255, 0.5); } }
+        h1 { font-family: 'Orbitron', sans-serif; font-size: 2.5rem; background: linear-gradient(135deg, var(--primary-cyan), var(--primary-purple)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 20px; }
+        .status { background: rgba(0, 255, 136, 0.1); border: 1px solid rgba(0, 255, 136, 0.3); color: #00ff88; padding: 15px 30px; border-radius: 10px; margin: 30px 0; font-size: 1.2rem; }
+        .files { background: rgba(0, 245, 255, 0.05); border: 1px solid rgba(0, 245, 255, 0.2); border-radius: 15px; padding: 25px; margin: 20px 0; text-align: left; }
+        .files h3 { color: var(--primary-cyan); font-family: 'Orbitron', sans-serif; margin-bottom: 15px; }
+        .files ul { list-style: none; }
+        .files li { padding: 8px 0; border-bottom: 1px solid rgba(0, 245, 255, 0.1); }
+        .files li:last-child { border: none; }
+        .files code { background: rgba(0, 245, 255, 0.1); padding: 3px 8px; border-radius: 4px; color: var(--primary-cyan); }
+        .info { color: rgba(255, 255, 255, 0.7); margin: 20px 0; line-height: 1.8; }
+        .join-btn { display: inline-block; padding: 15px 50px; font-family: 'Orbitron', sans-serif; font-size: 1rem; color: #fff; background: linear-gradient(135deg, var(--primary-cyan), var(--primary-purple)); border: none; border-radius: 50px; text-decoration: none; margin-top: 30px; transition: all 0.3s ease; }
+        .join-btn:hover { transform: scale(1.05); box-shadow: 0 0 40px rgba(0, 245, 255, 0.6); }
+    </style>
+</head>
+<body>
+    <div class="grid-overlay"></div>
+    <div class="container">
+        <div class="logo-ring"></div>
+        <h1>@Error400Username AI</h1>
+        <div class="status">PROJECT READY FOR DEPLOYMENT</div>
+        <div class="files">
+            <h3>Files Created:</h3>
+            <ul>
+                <li><code>index.php</code> - Main JARVIS-style AI Interface</li>
+                <li><code>backend.php</code> - Gemini API Handler</li>
+                <li><code>adminpanel.php</code> - Admin Panel with Login</li>
+                <li><code>config.php</code> - Database Configuration</li>
+                <li><code>setup.php</code> - Setup Wizard</li>
+            </ul>
+        </div>
+        <div class="info">
+            <strong>To use this project:</strong><br>
+            1. Download all PHP files<br>
+            2. Upload to your Hostinger public_html folder<br>
+            3. Visit setup.php to initialize<br>
+            4. Access your AI at index.php
+        </div>
+        <a href="https://t.me/Error400Username" target="_blank" class="join-btn">JOIN TELEGRAM</a>
+    </div>
+</body>
+</html>
